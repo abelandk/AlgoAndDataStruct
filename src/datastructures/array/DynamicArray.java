@@ -66,10 +66,11 @@ public class DynamicArray {
 
 		int[] temp = array;
 		array = new int[capacity*2];
-		for(int i = 0; i < capacity; i++) {
+		for(int i = 0; i < len; i++) {
 
 			array[i] = temp[i];
 		}
+		this.capacity = capacity * 2;
 	}
 
 	public int size() {
